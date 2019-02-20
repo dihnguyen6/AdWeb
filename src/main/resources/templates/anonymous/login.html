@@ -14,9 +14,9 @@
 
 <div class="login">
     <h1 class="fadeIn first"> Sign In</h1>
-    <form method="post">
-        <input type="text" id="login" class="fadeIn first" name="login" placeholder="Username" required="required">
-        <input type="password" id="password" class="fadeIn second" name="login" placeholder="Password" required="required">
+    <form method="post" th:action="@{/login}">
+        <input type="text" id="username" class="fadeIn first" name="login" placeholder="Username" required="true">
+        <input type="password" id="password" class="fadeIn second" name="login" placeholder="Password" required="true">
         <div class=" row remember fadeIn third custom-checkbox">
             <input id="rememberme" name="rememberme" value="remember" type="checkbox" />Remember me
         </div>
